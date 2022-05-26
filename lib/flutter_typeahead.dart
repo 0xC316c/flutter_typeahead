@@ -931,7 +931,8 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
         maxLines: widget.textFieldConfiguration.maxLines,
         minLines: widget.textFieldConfiguration.minLines,
         maxLength: widget.textFieldConfiguration.maxLength,
-        maxLengthEnforced: widget.textFieldConfiguration.maxLengthEnforced,
+        maxLengthEnforcement:
+            widget.textFieldConfiguration.maxLengthEnforcement,
         obscureText: widget.textFieldConfiguration.obscureText,
         onChanged: widget.textFieldConfiguration.onChanged,
         onSubmitted: widget.textFieldConfiguration.onSubmitted,
@@ -1420,8 +1421,8 @@ class TextFieldConfiguration {
   /// If true, prevents the field from allowing more than [maxLength]
   /// characters.
   ///
-  /// Same as [TextField.maxLengthEnforced](https://docs.flutter.io/flutter/material/TextField/maxLengthEnforced.html)
-  final bool maxLengthEnforced;
+  /// Same as [TextField.maxLengthEnforcement](https://docs.flutter.io/flutter/material/TextField/maxLengthEnforcement.html)
+  final bool maxLengthEnforcement;
 
   /// Whether to hide the text being edited (e.g., for passwords).
   ///
@@ -1494,7 +1495,7 @@ class TextFieldConfiguration {
     this.onChanged,
     this.onSubmitted,
     this.obscureText: false,
-    this.maxLengthEnforced: true,
+    this.maxLengthEnforcement: true,
     this.maxLength,
     this.maxLines: 1,
     this.minLines,
@@ -1528,7 +1529,7 @@ class TextFieldConfiguration {
       ValueChanged<String> onChanged,
       ValueChanged<String> onSubmitted,
       bool obscureText,
-      bool maxLengthEnforced,
+      bool maxLengthEnforcement,
       int maxLength,
       int maxLines,
       int minLines,
@@ -1558,7 +1559,7 @@ class TextFieldConfiguration {
       onChanged: onChanged ?? this.onChanged,
       onSubmitted: onSubmitted ?? this.onSubmitted,
       obscureText: obscureText ?? this.obscureText,
-      maxLengthEnforced: maxLengthEnforced ?? this.maxLengthEnforced,
+      maxLengthEnforcement: maxLengthEnforcement ?? this.maxLengthEnforcement,
       maxLength: maxLength ?? this.maxLength,
       maxLines: maxLines ?? this.maxLines,
       minLines: minLines ?? this.minLines,
