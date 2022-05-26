@@ -931,8 +931,6 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
         maxLines: widget.textFieldConfiguration.maxLines,
         minLines: widget.textFieldConfiguration.minLines,
         maxLength: widget.textFieldConfiguration.maxLength,
-        maxLengthEnforcement:
-            widget.textFieldConfiguration.maxLengthEnforcement,
         obscureText: widget.textFieldConfiguration.obscureText,
         onChanged: widget.textFieldConfiguration.onChanged,
         onSubmitted: widget.textFieldConfiguration.onSubmitted,
@@ -1418,12 +1416,6 @@ class TextFieldConfiguration {
   /// Same as [TextField.maxLength](https://docs.flutter.io/flutter/material/TextField/maxLength.html)
   final int maxLength;
 
-  /// If true, prevents the field from allowing more than [maxLength]
-  /// characters.
-  ///
-  /// Same as [TextField.maxLengthEnforcement](https://docs.flutter.io/flutter/material/TextField/maxLengthEnforcement.html)
-  final bool maxLengthEnforcement;
-
   /// Whether to hide the text being edited (e.g., for passwords).
   ///
   /// Same as [TextField.obscureText](https://docs.flutter.io/flutter/material/TextField/obscureText.html)
@@ -1495,7 +1487,6 @@ class TextFieldConfiguration {
     this.onChanged,
     this.onSubmitted,
     this.obscureText: false,
-    this.maxLengthEnforcement: true,
     this.maxLength,
     this.maxLines: 1,
     this.minLines,
@@ -1529,7 +1520,6 @@ class TextFieldConfiguration {
       ValueChanged<String> onChanged,
       ValueChanged<String> onSubmitted,
       bool obscureText,
-      bool maxLengthEnforcement,
       int maxLength,
       int maxLines,
       int minLines,
@@ -1559,7 +1549,6 @@ class TextFieldConfiguration {
       onChanged: onChanged ?? this.onChanged,
       onSubmitted: onSubmitted ?? this.onSubmitted,
       obscureText: obscureText ?? this.obscureText,
-      maxLengthEnforcement: maxLengthEnforcement ?? this.maxLengthEnforcement,
       maxLength: maxLength ?? this.maxLength,
       maxLines: maxLines ?? this.maxLines,
       minLines: minLines ?? this.minLines,
