@@ -18,9 +18,6 @@ version that accepts validation, submitting, etc.
 * Provides high customizability; you can customize the suggestion box decoration,
 the loading bar, the animation, the debounce duration, etc.
 
-## Installation
-See the [installation instructions on pub](https://pub.dartlang.org/packages/flutter_typeahead#-installing-tab-).
-
 ## Usage examples
 You can import the package with:
 ```dart
@@ -308,16 +305,7 @@ Manual control of the suggestions box can be achieved by creating an instance of
 passing it to the `suggestionsBoxController` property. This will allow you to manually open, close, toggle, or 
 resize the suggestions box.
 
-## For more information
-Visit the [API Documentation](https://pub.dartlang.org/documentation/flutter_typeahead/latest/)
-
 ## Team:
 | [<img src="https://avatars.githubusercontent.com/u/16646600?v=3" width="100px;"/>](https://github.com/AbdulRahmanAlHamali)|[<img src="https://avatars.githubusercontent.com/u/2034925?v=3" width="100px;"/>](https://github.com/sjmcdowall)|[<img src="https://avatars.githubusercontent.com/u/5499214?v=3" width="100px;"/>](https://github.com/KaYBlitZ)|
 |---|---|---|
 |AbdulRahman AlHamali|S McDowall|Kenneth Liang|
-
-## Shout out to the contributors!
-This project is the result of the collective effort of contributors who participated effectively by submitting pull requests, reporting issues, and answering questions. Thank you for your proactiveness, and we hope flutter_typeahead made your lifes at least a little easier!
-
-## How you can help
-[Contribution Guidelines](https://github.com/AbdulRahmanAlHamali/flutter_typeahead/blob/master/CONTRIBUTING.md)
